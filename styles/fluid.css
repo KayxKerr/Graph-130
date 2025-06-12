@@ -4,7 +4,9 @@ body,main,article,section,header,footer {
     padding: 0;
     box-sizing: border-box;
 }
-
+.pure-u-1-2 {
+    box-sizing: border-box;
+}
 nav a {
     flex-grow: 1;
     text-align: center;
