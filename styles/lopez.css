@@ -1,0 +1,136 @@
+:root {
+    --red:#480712 ;
+    --white: #ffffff ; 
+    font-family: "League Spartan", sans-serif;
+}
+
+body,header,main,footer,section,article,aside {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+main, header, nav ul, footer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: lightgray;
+}
+
+main section {
+    border: solid white 1px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* the following classes will govern the sections and make them work within the grid */
+
+.hero-lopez, main section {
+    background-image: url(../images/sj-052.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+
+.hero-lopez {
+    grid-column-start: 4;
+    grid-column-end: 1;
+}
+
+.pic3, .pic2, .pic1 {
+    background-image: url(../images/sj-057.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60%;
+}
+.pic1 {
+    background-image: url(../images/sj-060.jpg);
+}
+.pic3 {
+    background-image: url(../images/sj-065.jpg);
+}
+
+.item7 {
+    grid-column-start: 2;
+    grid-column-end: 1;
+}
+.item8, .item9, .item10, .hero-orcas {
+    grid-column-start: 0.5;
+    grid-column-end: 0.5;
+}
+
+/* styling elements */
+
+header {
+    background-color: var(--white);
+    text-align: center;
+}
+
+header a, header p, nav a {
+    color: lightgray;
+    text-decoration: none;
+}
+
+
+
+h1 {
+    color: var(--white);
+    text-transform: uppercase;
+    text-shadow: #480712 3px 3px 3px;
+}
+
+nav ul {
+    background-color: var(--white);
+}
+
+nav ul li {
+    list-style-type: none;
+    text-align: center;
+    background-color: var(--white);
+    height: 100px;
+}
+
+nav ul li:hover {
+    background-color: lightgray;
+    color: var(--white);
+}
+
+main section {
+    height: 400px;
+}
+
+.item2 {
+    background-image: none;
+}
+
+.item3 {
+    background-image: none;
+}
+
+.item4 {
+    background-image: url(../images/sj-042.jpg);
+}
+
+.item5 {
+    background-image: url(../images/sj-033.jpg);
+}
+
+.item6 {
+    background-image: url(../images/sj-046.jpg);
+}
+
+.item1 {
+    background-image: none;
+}
+
+.item7 {
+    grid-column-start: 4;
+    grid-column-end: 1;
+    text-align: center;
+    font-size: 50px;
+    color: #012739;
+    background-image: url(../images/sj-044.jpg);
+     font-family: "Instrument Serif", serif;
+}
