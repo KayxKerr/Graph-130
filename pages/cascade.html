@@ -8,6 +8,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Special+Elite&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="nav-placeholder"></div>
+        <script> 
+            fetch('nav.html') 
+            .then(response => response.text()) 
+            .then(data => { 
+            document.getElementById('nav-placeholder').innerHTML = data; 
+            }); 
+        </script>
 <article class="container">
         <header>
             <h1>Cascade Mountains</h1>

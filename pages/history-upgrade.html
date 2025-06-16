@@ -7,6 +7,14 @@
     <link href="../styles/history.css" rel="stylesheet" type="text/css">
 </head>
     <body>
+      <div id="nav-placeholder"></div>
+        <script> 
+            fetch('nav.html') 
+            .then(response => response.text()) 
+            .then(data => { 
+            document.getElementById('nav-placeholder').innerHTML = data; 
+            }); 
+        </script>
         <main>
             <section>
                 <p><b>Dwight Eisenhower</b> - American politician and Army general who served as the 34th President of the United States from 1953 until 1961. </p>
