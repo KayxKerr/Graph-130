@@ -5,9 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Colors</title>
         <style>
-
-            @media screen and (max-width: 485px)
+            /*tablets, landscape or landscape phones*/
+            @media screen and (max-width: 961px) {
+                body {
+                    background-color: blue;
+                    color: white;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                }
+            }
+           /*portrait tablets or landscape phones*/ 
+           @media screen and (max-width: 641px)
+                {
+                    body {
+                        background-color: green;
+                        color: purple;
+                    }
+                }
+                    h1 {
+                        font-size: 4em;
+                    }
+                    p {
+                        font-size: 1.5em;
+                    }
             /*portrait e-readers (nook or kindle), smaller tablets and phones*/
+            @media screen and (max-width: 485px)
             {
                 body {
                     background-color: yellow;
