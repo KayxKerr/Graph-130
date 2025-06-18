@@ -15,6 +15,14 @@
             document.getElementById('nav-placeholder').innerHTML = data;
             }); 
         </script>
+    <div id="nav-placeholder"></div>
+        <script> 
+            fetch('nav.html') 
+            .then(response => response.text()) 
+            .then(data => { 
+            document.getElementById('nav-placeholder').innerHTML = data;
+            }); 
+        </script>
         <main>
             <section>
                 <h1>Grid Based Layout</h1>
@@ -92,8 +100,15 @@
 
                 </article>
             </section>
-            <section></section>
-            <section></section>
+            <section  class="pure-g">
+                <img src="../images/hearts-1.jpg" class="pure-u-1-4" alt="hearts image">
+                <img src="../images/pine-trees-2.jpg" class="pure-u-1-4" alt="pine trees">
+                <img src="../images/dark-forest-3.jpg" class="pure-u-1-4" alt="dark forest">
+                <img src="../images/clouds-4.jpg" class="pure-u-1-4" alt="clouds image">
+            </section>
+            <section>
+                <p>EvCC | Spring 2025 | Kaylee Kerr</p>
+            </section>
         </main>
 </body>
 </html>
